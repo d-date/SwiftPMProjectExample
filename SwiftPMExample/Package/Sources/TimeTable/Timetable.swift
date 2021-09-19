@@ -18,7 +18,7 @@ public struct Timetable: View {
 
 struct Timetable_Previews: PreviewProvider {
     static var previews: some View {
-        Timetable(url: .init(string: "https://fortee.jp/iosdc-japan-2021/timetable")!)
+        Timetable(url: URL(string: "https://fortee.jp/iosdc-japan-2021/timetable")!)
     }
 }
 

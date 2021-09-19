@@ -18,31 +18,31 @@ public extension Build {
     static var live = Self(
         eventbriteURL: {
             let url = Bundle.main.infoDictionary!["Eventbrite URL"] as! String
-            return .init(string: url)!
+            return URL(string: url)!
         }, iOSDCJapanWebURL: {
             let url = Bundle.main.infoDictionary!["iOSDC JAPAN URL"] as! String
-            return .init(string: url)!
+            return URL(string: url)!
         }, sponsorURL: {
             let url = Bundle.main.infoDictionary!["Sponsor URL"] as! String
-            return .init(string: url)!
+            return URL(string: url)!
         }, bloglinkURL: {
             let url = Bundle.main.infoDictionary!["Bloglink URL"] as! String
-            return .init(string: url)!
+            return URL(string: url)!
         }, timetableURL: {
             let url = Bundle.main.infoDictionary!["Timetable URL"] as! String
-            return .init(string: url)!
+            return URL(string: url)!
         }, blogURL: {
             let url = Bundle.main.infoDictionary!["Blog URL"] as! String
-            return .init(string: url)!
+            return URL(string: url)!
         }
     )
 
     static var none = Self(
-        eventbriteURL: { .init(string: "https://")! },
-        iOSDCJapanWebURL: { .init(string: "https://")! },
-        sponsorURL: { .init(string: "https://")! },
-        bloglinkURL: { .init(string: "https://")! },
-        timetableURL: { .init(string: "https://")! },
-        blogURL: { .init(string: "https://")! }
+        eventbriteURL: { URL(string: "https://")! },
+        iOSDCJapanWebURL: { URL(string: "https://")! },
+        sponsorURL: { URL(string: "https://")! },
+        bloglinkURL: { URL(string: "https://")! },
+        timetableURL: { URL(string: "https://")! },
+        blogURL: { URL(string: "https://")! }
     )
 }

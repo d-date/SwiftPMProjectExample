@@ -78,8 +78,8 @@ struct PrimaryButtonStyle: ButtonStyle {
 
     func makeBody(configuration: Configuration) -> some View {
         #if os(macOS)
-        configuration.label
-            .font(.body.bold())
+        return configuration.label
+            .font(Font.body.bold())
             .foregroundColor(.init(.windowBackgroundColor))
             .opacity(configuration.isPressed ? 0.2 : 1.0)
             .padding()
@@ -90,8 +90,8 @@ struct PrimaryButtonStyle: ButtonStyle {
             .cornerRadius(4.0)
             .shadow(color: Color(.labelColor).opacity(0.12), radius: 20, x: 0, y: 6)
         #else
-        configuration.label
-            .font(.body.bold())
+        return configuration.label
+            .font(Font.body.bold())
             .foregroundColor(.init(.systemBackground))
             .opacity(configuration.isPressed ? 0.2 : 1.0)
             .padding()

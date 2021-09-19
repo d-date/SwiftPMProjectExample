@@ -11,7 +11,7 @@ public struct Setting: View {
         NavigationView {
             List {
                 NavigationLink("Sign in fortee", destination:
-                    WebView(request: .init(url: .init(string: "https://fortee.jp/login")!), configuration: .init())
+                    WebView(request: .init(url: URL(string: "https://fortee.jp/login")!), configuration: .init())
                 )
             }
             .navigationTitle("Settings")
