@@ -15,7 +15,7 @@ public struct Sponsor: View {
 
 struct Sponsor_Previews: PreviewProvider {
     static var previews: some View {
-        Sponsor(url: .init(string: "https://iosdc.jp/2021/sponsor.html")!)
+        Sponsor(url: URL(string: "https://iosdc.jp/2021/sponsor.html")!)
     }
 }
 

@@ -15,6 +15,6 @@ public struct Blog: View {
 
 struct Blog_Previews: PreviewProvider {
     static var previews: some View {
-        Blog(url: .init(string: "https://blog.iosdc.jp")!)
+        Blog(url: URL(string: "https://blog.iosdc.jp")!)
     }
 }

@@ -15,7 +15,7 @@ public struct BlogLinks: View {
 
 struct BlogLinks_Previews: PreviewProvider {
     static var previews: some View {
-        BlogLinks(url: .init(string: "https://fortee.jp/iosdc-japan-2021/blog-link")!)
+        BlogLinks(url: URL(string: "https://fortee.jp/iosdc-japan-2021/blog-link")!)
     }
 }
 
