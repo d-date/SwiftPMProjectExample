@@ -70,3 +70,4 @@ fastlane/screenshots
 fastlane/test_output
 
 !SwiftPMExample/Package/Sources/Build/
+/SwiftPMExample/Package/Package.resolved
