@@ -12,6 +12,15 @@ This is example project for my presentation in [iOSDC JAPAN 2021](https://fortee
 
 - Xcode ~~12.5~~ 12.4 and later (modified by [#1](https://github.com/d-date/SwiftPMProjectExample/pull/1))
 
+## Dependency Graph
+
+```sh
+$ brew install graphviz
+$ swift package show-dependencies --format dot | dot -Tsvg -o graph.svg
+```
+
+![graph.svg](SwiftPMExample/Package/graph.svg)
+
 ## Contributing
 
 When you find some issues or improvements, feel free to open pull request.

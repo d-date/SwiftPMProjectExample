@@ -8,10 +8,10 @@ let package = Package(
     platforms: [.iOS(.v14), .macOS(.v11), .watchOS(.v6), .tvOS(.v14)],
     products: [
         .library(name: "AppFeature", targets: ["AppFeature"]),
-        .library(name: "HomeFeature", targets: ["Home", "Build"]),
+        .library(name: "HomeFeature", targets: ["Home"]),
         .library(name: "SettingFeature", targets: ["Setting"]),
-        .library(name: "SponsorFeature", targets: ["Sponsor", "Build"]),
-        .library(name: "TimeTableFeature", targets: ["TimeTable", "Build"]),
+        .library(name: "SponsorFeature", targets: ["Sponsor"]),
+        .library(name: "TimeTableFeature", targets: ["TimeTable"]),
     ],
     dependencies: [
         .package(name: "Firebase", url: "https://github.com/firebase/firebase-ios-sdk", from: "8.6.0")
